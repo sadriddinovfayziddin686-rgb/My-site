@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Birinchi Saytim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(15, 23, 42, 0.8);
+            color: #64748b;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MeningSaytim</div>
+        <nav>
+            <a href="#">Bosh sahifa</a>
+            <a href="#">Haqimda</a>
+            <a href="#">Aloqa</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Salom, Dunyo! 🚀</h1>
+        <p>Bu siz yaratgan eng birinchi zamonaviy va chiroyli veb-sahifa. Uni istaganingizcha o'zgartirishingiz va sinab ko'rishingiz mumkin.</p>
+        <button class="btn" onclick="alert('Tabriklayman! Saytingiz mukammal ishlayapti!')">Tugmani bosing</button>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Tezkor</h3>
+            <p>Ushbu sahifa hech qanday qo'shimcha fayllarsiz bitta joyda ishlaydi.</p>
+        </div>
+        <div class="card">
+            <h3>Moslashuvchan</h3>
+            <p>Telefon va kompyuter ekranlarida birdek chiroyli ko'rinadi.</p>
+        </div>
+        <div class="card">
+            <h3>Oson</h3>
+            <p>HTML va CSS tillarining eng tushunarli qismlari yordamida yasalgan.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
